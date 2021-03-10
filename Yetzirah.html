@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Yetzirah CH</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="estiloYetzirah.css">
+    </head>
+    <body>
+        <a class="boton" href="index.html">Inicio</a><h1><span>ACTIVIDADES</h1></span>
+        <button class="tablink" onclick="openPage('Linea', this, 'blue')" id="defaultOpen">Linea del Tiempo</button>
+        <button class="tablink" onclick="openPage('CV', this, 'darkgreen')">Curriculum Vitae</button>
+        <button class="tablink" onclick="openPage('Paises', this, 'maroon')">Paises</button>
+        <button class="tablink" onclick="openPage('Adiv', this, 'indigo')">Adivinanzas</button>
+        <button class="tablink" onclick="openPage('PR', this, 'black')">Página Responsiva</button>
+        
+        <div id="Linea" class="tabcontent">
+            <h3>Actividad 1 - Unidad 1</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Actividad1/LineaTiempo.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="CV" class="tabcontent">
+            <h3>Actividad 2 - Unidad 1</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Actividad2/curriculum.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="Paises" class="tabcontent">
+            <h3>Actividad 3 - Unidad 1</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Actividad3/Mexico.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="Adiv" class="tabcontent">
+            <h3>Actividad 4 - Unidad 1</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Actividad4/Peliculas.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="PR" class="tabcontent">
+            <h3>Actividad 5 - Unidad 1</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Actividad5/PaginaResponsiva.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <script>
+            function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;}
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+   </body>
+</html> 

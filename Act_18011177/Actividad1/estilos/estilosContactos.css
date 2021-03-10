@@ -1,0 +1,55 @@
+body {
+    background-image: url(https://fondosmil.com/fondo/17024.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color:rgb(255, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+h3{
+    color: whitesmoke;
+    text-align: center;
+}
+
+h4{
+    color: whitesmoke;
+    text-align: center;
+}
+
+a{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    color:rgb(2, 4, 128);
+    background:burlywood;
+    display: inline-block;
+    padding:20px;
+}
+
+img{
+    width: 10%;
+    height: 10%;
+    display:block;
+    margin:auto;
+}
+
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 5px; /*espacio alrededor texto*/
+    background-color: #022c6e; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 30px; /*bordes redondos*/
+}
